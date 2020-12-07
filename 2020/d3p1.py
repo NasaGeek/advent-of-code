@@ -1,8 +1,6 @@
 
 
-def main():
-    dy = 1
-    dx = 3
+def main(dx, dy):
     lines = inp.split("\n")
     wrap = len(lines[0])
     x = dx
@@ -341,4 +339,4 @@ inp = """.....##.#.....#........#....##.
 .#..##.##.#......#....##..#...."""
 
 if __name__ == "__main__":
-    print(main())
+    print(main(3, 1))
