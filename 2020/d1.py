@@ -8,6 +8,12 @@ def main():
         if a + b == 2020:
             print(a * b)
 
+def mainp2():
+    nums = [int(i) for i in inp.split()]
+    for a, b, c in itertools.combinations(nums, 3):
+        if a + b + c == 2020:
+            print(a * b * c)
+
 inp = """
 1411
 1802
@@ -211,4 +217,4 @@ inp = """
 1741"""
 
 if __name__ == '__main__':
-    main()
+    mainp2()
